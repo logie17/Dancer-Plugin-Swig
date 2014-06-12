@@ -12,6 +12,7 @@ my $swig_client;
 register render => sub {
   my ($template_path, $params) = @_;
   $params ||= {};
+  initialize() unless $swig_client;
   return $swig_client->render($template_path, $params);
 };
 
