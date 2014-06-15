@@ -40,6 +40,30 @@ register_plugin;
 Dancer::Plugin::Swig - A plugin for swig client
 
 =head1 SYNOPSIS
+In your Dancer config.yml:
+
+  plugins:
+      Swig:
+          service_url: "http://localhost:21060"
+
+In your Dancer application:
+
+  package NewApp;
+  use Dancer ':syntax';
+  use Dancer::Plugin::Swig;
+
+  our $VERSION = '0.1';
+
+  get '/' => sub {
+    render 'index.html', { hello_world => 'howdy' };
+  };
+
+  true;
+
+=head1 DESCRIPTION
+
+B<Dancer::Plugin::Swig> provides syntax to interact with a Swig as a service
+application.
 
 =head1 LICENSE
 
