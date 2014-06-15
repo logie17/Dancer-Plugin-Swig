@@ -1,2 +1,0 @@
-Dancer-Plugin-Swig
-==================
