@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package Dancer::Plugin::Swig;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Dancer ':syntax';
 use Dancer::Plugin;
