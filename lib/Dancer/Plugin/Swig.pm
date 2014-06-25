@@ -8,7 +8,7 @@ use Dancer::Plugin;
 use WebService::SwigClient;
 
 my $swig_client;
- 
+
 register render => sub {
   my ($template_path, $params) = @_;
   $params ||= {};
@@ -31,7 +31,7 @@ sub initialize {
 
   return;
 }
- 
+
 register_plugin;
 1;
 
