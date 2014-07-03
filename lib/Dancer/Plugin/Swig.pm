@@ -40,6 +40,7 @@ register_plugin;
 Dancer::Plugin::Swig - A plugin for swig client
 
 =head1 SYNOPSIS
+
 In your Dancer config.yml:
 
   plugins:
